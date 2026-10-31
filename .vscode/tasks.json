@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Vulkan Triangle",
+            "type": "shell",
+            "command": "cmake -S \"${workspaceFolder}\" -B \"${workspaceFolder}/build\" && cmake --build \"${workspaceFolder}/build\" --parallel",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Run Vulkan Triangle",
+            "type": "shell",
+            "command": "\"${workspaceFolder}/build/vulkan_triangle\"",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "Build Vulkan Triangle",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: g++ build active file",
+            "command": "cmake -S \"${workspaceFolder}\" -B \"${workspaceFolder}/build\" && cmake --build \"${workspaceFolder}/build\" --parallel",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Runs the CMake Vulkan sample build (overrides the generated active-file task)."
+        }
+    ]
+}

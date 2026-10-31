@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "*.vert": "cpp",
+        "*.frag": "cpp",
+        "*.comp": "cpp",
+        "*.glsl": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled",
+    "debug.console.collapseIdenticalLines": false,
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "[javascript][json]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false
+    },
+    "chat.disableAIFeatures": false,
+    "debug.openDebug": "neverOpen",
+    "debug.console.wordWrap": false
+}
